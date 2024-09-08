@@ -45,7 +45,9 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService{
    final String KEY = "9toq77DZvOo2Wo4a9jGNKUlG%2BogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ%3D%3D";
    final String DEC_KEY = "9toq77DZvOo2Wo4a9jGNKUlG+ogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ==";
    
-   final String OPENAI_API_KEY = "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";
+   // 기존 ChatGPT API KEY : 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
+   // 신규 ChatGPT API KEY : sk-OK440TlAdfxGynpAcA_fpkjTtPkhzil_3452ItCUhyT3BlbkFJ6gKrWTkBs4HltiJ6Mvtp2JlBGB5demyQqLMhm29W8A
+   final String OPENAI_API_KEY = "sk-OK440TlAdfxGynpAcA_fpkjTtPkhzil_3452ItCUhyT3BlbkFJ6gKrWTkBs4HltiJ6Mvtp2JlBGB5demyQqLMhm29W8A";
    
    Logger logger = LoggerFactory.getLogger(EgovHbzScrapServiceImpl.class);
 
@@ -61,7 +63,7 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService{
     		.data("ServiceKey",DEC_KEY)
     		.data("emdongNm", address)					// 주소
     		.data("dgsbjtCd", code)						// 진료 코드 (예시:02-신경과)
-            .timeout(30000)								// 시간초과
+            .timeout(60000)								// 시간초과
             .get();
 
       // XML 파싱
