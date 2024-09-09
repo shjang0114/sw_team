@@ -45,9 +45,8 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService{
    final String KEY = "9toq77DZvOo2Wo4a9jGNKUlG%2BogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ%3D%3D";
    final String DEC_KEY = "9toq77DZvOo2Wo4a9jGNKUlG+ogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ==";
    
-   // 기존 ChatGPT API KEY : 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
-   // 신규 ChatGPT API KEY : sk-OK440TlAdfxGynpAcA_fpkjTtPkhzil_3452ItCUhyT3BlbkFJ6gKrWTkBs4HltiJ6Mvtp2JlBGB5demyQqLMhm29W8A
-   final String OPENAI_API_KEY = "sk-OK440TlAdfxGynpAcA_fpkjTtPkhzil_3452ItCUhyT3BlbkFJ6gKrWTkBs4HltiJ6Mvtp2JlBGB5demyQqLMhm29W8A";
+   // ChatGPT API KEY
+   final String OPENAI_API_KEY = "ChatGPT API KEY";
    
    Logger logger = LoggerFactory.getLogger(EgovHbzScrapServiceImpl.class);
 
