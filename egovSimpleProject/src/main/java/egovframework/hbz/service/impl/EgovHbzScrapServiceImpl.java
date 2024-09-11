@@ -61,11 +61,12 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		List<Map<String, Object>> hospitalList = new ArrayList<>();
 
 		String url = base_url + "/getHospBasisList?";
-		Document doc = Jsoup.connect(url).data("ServiceKey", DEC_KEY)
-										 .data("emdongNm", address) // 주소
-										 .data("dgsbjtCd", code) // 진료 코드 (예시:02-신경과)
-										 .timeout(60000) // 시간초과
-										 .get();
+		Document doc = Jsoup.connect(url)
+				.data("ServiceKey", DEC_KEY) // 인증키
+				.data("emdongNm", address) // 주소
+				.data("dgsbjtCd", code) // 진료 코드 (예시:02-신경과)
+				.timeout(60000) // 시간초과
+				.get();
 
 		// XML 파싱
 		Elements items = doc.select("item"); // 'item' 태그를 가진 요소들을 선택
@@ -177,12 +178,13 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		String trmtSunStart = null;
 		String trmtSunEnd = null;
 
-		Document doc = Jsoup.connect(url).data("serviceKey", DECODING_KEY)
-										 .data("ykiho", ykiho) // 요양 코드
-										 .data("_type", "json") // 데이터 타입
-										 .timeout(600000) // 시간 초과
-										 .ignoreContentType(true)
-										 .get();
+		Document doc = Jsoup.connect(url)
+				.data("serviceKey", DECODING_KEY) // 인증키
+				.data("ykiho", ykiho) // 요양 코드
+				.data("_type", "json") // 데이터 타입
+				.timeout(600000) // 시간 초과
+				.ignoreContentType(true) // 콘텐츠 타입 무시
+				.get();
 
 		System.out.println("### doc ###		" + doc.text());
 
