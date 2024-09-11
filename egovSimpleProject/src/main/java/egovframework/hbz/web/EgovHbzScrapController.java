@@ -31,19 +31,6 @@ public class EgovHbzScrapController {
 	@Autowired
 	EgovHbzScrapServiceImpl egovHbzScrapServiceImpl;
 
-	/*
-	 * @Scheduled(fixedDelay = 1000, initialDelay = 5000) public void
-	 * scheduledTest() throws Exception {
-	 * 
-	 * Date date = new Date();
-	 * 
-	 * SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
-	 * 
-	 * String nowDate = dateFormat.format(date);
-	 * 
-	 * System.out.println("스케줄러 현재시간 : " + nowDate ); }
-	 */
-
 	// 네이버 뉴스 랭킹
 	@RequestMapping(value = "/hbz/newsRank.do")
 	public String newsRank(Model model) throws Exception {
@@ -107,7 +94,7 @@ public class EgovHbzScrapController {
 		return "/scrp/getVilageFcst";
 	}
 
-	// 병원 데이터
+	// 병원 기본정보
 	@RequestMapping(value = "/hbz/Hospital.do", method = RequestMethod.GET)
 	public String hostpitalInfo(@RequestParam("address") String address, String code, Model model) throws Exception {
 		List<Map<String, Object>> hospitalList = egovHbzScrapServiceImpl.hospitalInfo(address, code);
@@ -117,7 +104,7 @@ public class EgovHbzScrapController {
 		return "/main/EgovMainView";
 	}
 
-	// 맵테스트
+	// 맵 테스트
 	@RequestMapping(value = "/hbz/Map.do", method = RequestMethod.GET)
 	public String MapTest(Model model) throws Exception {
 		return "/main/EgovMainView";
@@ -140,15 +127,16 @@ public class EgovHbzScrapController {
 		return "/main/EgovMainView";
 	}
 
+	// 챗봇
 	@RequestMapping(value = "/hbz/getGPT3Response.do", method = RequestMethod.GET)
 	@ResponseBody
 	public Map<String, String> getGPT3Response(@RequestParam(value = "question", required = false) String question) throws Exception {
 		logger.info("질문 처리 시작: " + question);
 
-		// OpenAI API를 호출하여 답변 받기
+		// ChatGPT API를 호출하여 답변 받기
 		String answer = egovHbzScrapServiceImpl.getResponseFromGPT3(question);
 
-		// 질문과 답변을 JSON 객체로 반환
+		// 질문 및 답변을 JSON 객체로 반환
 		Map<String, String> response = new HashMap<>();
 		response.put("question", question);
 		response.put("answer", answer);

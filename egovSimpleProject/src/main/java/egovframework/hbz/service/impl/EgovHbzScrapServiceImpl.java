@@ -55,15 +55,17 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 	// [ Base URL: apis.data.go.kr/B551182/hospInfoServicev2 ]
 	final String base_url = "https://apis.data.go.kr/B551182/hospInfoServicev2";
 
+	// 공공데이터포털 - 병원 기본 정보 테스트 (XML)
 	@Override
 	public List<Map<String, Object>> hospitalInfo(String address, String code) throws Exception {
 		List<Map<String, Object>> hospitalList = new ArrayList<>();
 
 		String url = base_url + "/getHospBasisList?";
-		Document doc = Jsoup.connect(url).data("ServiceKey", DEC_KEY).data("emdongNm", address) // 주소
-				.data("dgsbjtCd", code) // 진료 코드 (예시:02-신경과)
-				.timeout(60000) // 시간초과
-				.get();
+		Document doc = Jsoup.connect(url).data("ServiceKey", DEC_KEY)
+										 .data("emdongNm", address) // 주소
+										 .data("dgsbjtCd", code) // 진료 코드 (예시:02-신경과)
+										 .timeout(60000) // 시간초과
+										 .get();
 
 		// XML 파싱
 		Elements items = doc.select("item"); // 'item' 태그를 가진 요소들을 선택
@@ -175,8 +177,12 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		String trmtSunStart = null;
 		String trmtSunEnd = null;
 
-		Document doc = Jsoup.connect(url).data("serviceKey", DECODING_KEY).data("ykiho", ykiho).data("_type", "json")
-				.timeout(600000).ignoreContentType(true).get();
+		Document doc = Jsoup.connect(url).data("serviceKey", DECODING_KEY)
+										 .data("ykiho", ykiho) // 요양 코드
+										 .data("_type", "json") // 데이터 타입
+										 .timeout(600000) // 시간 초과
+										 .ignoreContentType(true)
+										 .get();
 
 		System.out.println("### doc ###		" + doc.text());
 
