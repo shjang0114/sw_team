@@ -294,19 +294,15 @@
 			<button class="symptom-btn" data-symptom="목이 쑤신데">목이 쑤심</button>
 			<button class="symptom-btn" data-symptom="가슴이 따가운데">가슴이 따가움</button>
 			<button class="symptom-btn" data-symptom="가슴이 골절인데">가슴이 골절</button>
-			<button class="symptom-btn" data-symptom="배가 찌르듯이 아픈데">배가
-				찌르듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="배가 찌르듯이 아픈데">배가 찌르듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="성기가 따가운데">성기가 따가움</button>
 			<button class="symptom-btn" data-symptom="성기가 골절인데">성기가 골절</button>
-			<button class="symptom-btn" data-symptom="어깨가 쑤시듯이 아픈데">어깨가
-				쑤시듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="어깨가 쑤시듯이 아픈데">어깨가 쑤시듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="어깨가 골절인데">어깨가 골절</button>
-			<button class="symptom-btn" data-symptom="팔이 쑤시듯이 아픈데">팔이
-				쑤시듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="팔이 쑤시듯이 아픈데">팔이 쑤시듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="팔이 골절인데">팔이 골절</button>
 			<button class="symptom-btn" data-symptom="손이 따가운데">손이 따가움</button>
-			<button class="symptom-btn" data-symptom="손이 쑤시듯이 아픈데">손이
-				쑤시듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="손이 쑤시듯이 아픈데">손이 쑤시듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="손이 골절인데">손이 골절</button>
 			<button class="symptom-btn" data-symptom="골반이 쑤신데">골반이 쑤심</button>
 			<button class="symptom-btn" data-symptom="골반이 골절인데">골반이 골절</button>
@@ -327,7 +323,7 @@
 		<button id="increase-font-size">+</button>
 		<button id="decrease-font-size">-</button>
 
-		<input type="text" id="chatbot-input" placeholder="메세지 입력">
+		<input type="text" id="chatbot-input" placeholder="메시지 입력">
 		<button id="chatbot-send">보내기</button>
 	</div>
 </div>

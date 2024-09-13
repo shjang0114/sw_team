@@ -1282,7 +1282,7 @@
 		getUserCurrentLocation();
 		
 		// 병원 진료 과목 코드
-		var hospital_subject = '0'; // 기본값 : 없음
+		var hospital_subject = '0'; // 기본값 0 : 없음
 		
 		// 병원 위치 정보 확인
 		function getUserLocation() {
@@ -1411,7 +1411,7 @@
 		    	    },
 		    };
 		    
-		 	// 요일별 운영시간 인포윈도우 출력
+		 	// 요일별 병원 운영시간 인포윈도우 출력
 		    var monStart = !positions[i].trmtMonStart ? '0900' : positions[i].trmtMonStart;
 		    var monEnd = !positions[i].trmtMonEnd ? '1700' : positions[i].trmtMonEnd;
 		    var tueStart = !positions[i].trmtTueStart ? '0900' : positions[i].trmtTueStart;

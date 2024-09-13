@@ -64,8 +64,8 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		Document doc = Jsoup.connect(url)
 				.data("ServiceKey", DEC_KEY) // 인증키
 				.data("emdongNm", address) // 주소
-				.data("dgsbjtCd", code) // 진료 코드 (예시:02-신경과)
-				.timeout(60000) // 시간초과
+				.data("dgsbjtCd", code) // 진료 코드 (예시:02 - 신경과)
+				.timeout(60000) // 시간 초과
 				.get();
 
 		// XML 파싱
@@ -207,11 +207,11 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		if (json_items_object != null && json_items_object instanceof JSONObject) {
 			JSONObject json_items = (JSONObject) json_Body.get("items");
 			// System.out.println("### json_items ### " + json_items.toString());
-			System.out.println("");
+			// System.out.println("");
 
 			JSONObject json_item = (JSONObject) json_items.get("item");
 			// System.out.println("### json_item ### " + json_item.toString());
-			System.out.println("");
+			// System.out.println("");
 
 			trmtMonStart = String.valueOf(json_item.get("trmtMonStart")); // 월요일 진료 시작
 			trmtMonEnd = String.valueOf(json_item.get("trmtMonEnd")); // 월요일 진료 종료

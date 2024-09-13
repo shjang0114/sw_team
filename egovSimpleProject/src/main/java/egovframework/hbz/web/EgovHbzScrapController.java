@@ -94,7 +94,7 @@ public class EgovHbzScrapController {
 		return "/scrp/getVilageFcst";
 	}
 
-	// 병원 기본정보
+	// 공공데이터포털 - 병원 기본정보
 	@RequestMapping(value = "/hbz/Hospital.do", method = RequestMethod.GET)
 	public String hostpitalInfo(@RequestParam("address") String address, String code, Model model) throws Exception {
 		List<Map<String, Object>> hospitalList = egovHbzScrapServiceImpl.hospitalInfo(address, code);
@@ -110,7 +110,7 @@ public class EgovHbzScrapController {
 		return "/main/EgovMainView";
 	}
 
-	// 병원 상세정보
+	// 공공데이터포털 - 병원 상세정보
 	@RequestMapping(value = "/hbz/HospitalInfo.do", method = RequestMethod.GET)
 	public String HospitalPage(@RequestParam("ykiho") String ykiho, Model model) throws Exception {
 		System.out.println("Received ykiho: " + ykiho);
