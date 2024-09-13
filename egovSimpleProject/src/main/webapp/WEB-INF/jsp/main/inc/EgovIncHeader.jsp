@@ -1,15 +1,3 @@
-<%--
-  Class Name : EgovIncHeader.jsp
-  Description : 화면상단 Header(include)
-  Modification Information
- 
-      수정일         수정자                   수정내용
-    -------    --------    ---------------------------
-     2011.08.31   JJY       경량환경 버전 생성
- 
-    author   : 실행환경개발팀 JJY
-    since    : 2011.08.31 
---%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -19,10 +7,10 @@
 
 <div class="container">
 
-	<!-- 좌측의 홈페이지 제목, 클릭시 상단으로 이동-->
+	<!-- 좌측의 홈페이지 제목, 클릭 시 상단으로 이동-->
 	<a class="navbar-brand" href="#hospital">Hospinet</a>
 
-	<!-- 반응형으로 화면의 width 크기가 작아졌을 때 메뉴버튼이 생기고, 클릭했을때 하단 하위 메뉴들이 생김-->
+	<!-- 반응형으로 화면의 width 크기가 작아졌을 때 메뉴 버튼이 생기고, 클릭했을때 하단 하위 메뉴들이 생김-->
 	<button
 		class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
 		type="button" data-bs-toggle="collapse"
@@ -31,7 +19,7 @@
 		Menu <i class="fas fa-bars"></i>
 	</button>
 
-	<!-- 우측의 하위 메뉴들로 클릭시 각 href에 링크된 구역으로 이동 -->
+	<!-- 우측의 하위 메뉴들로 클릭 시 각 href에 링크된 구역으로 이동 -->
 	<div class="collapse navbar-collapse" id="navbarResponsive">
 		<ul class="navbar-nav ms-auto">
 			<li class="nav-item mx-0 mx-lg-1 relative-position"><a

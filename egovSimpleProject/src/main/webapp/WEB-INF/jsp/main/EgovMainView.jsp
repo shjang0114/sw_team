@@ -20,7 +20,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Language" content="ko">
-<title>Hospinet</title>
+<title>HOSPINET</title>
 <link href="<c:url value='/'/>css/styles.css" rel="stylesheet"
 	type="text/css">
 <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
@@ -1282,7 +1282,7 @@
 		getUserCurrentLocation();
 		
 		// 병원 진료 과목 코드
-		var hospital_subject = '0'; // 치과
+		var hospital_subject = '0'; // 기본값 : 없음
 		
 		// 병원 위치 정보 확인
 		function getUserLocation() {
@@ -1305,7 +1305,7 @@
 			          // 여기에서 슬라이싱을 통해 원하는 부분의 주소를 얻어냅니다.
 			          var slicedAddress = fullAddress.slice(0, 12); // 예: 주소의 처음 12글자 ex(경산북도 경산시 하양읍)
 			          console.log('슬라이싱된 주소: ' + slicedAddress);
-			          var slicedCode = hospital_subject; // 치과
+			          var slicedCode = hospital_subject; // 선택된 진료 과목 코드
 
 			          // 그리고 나서 이 주소를 API에 전달합니다.
 			          $.ajax({
@@ -1687,7 +1687,7 @@
 		//모달 버튼색 체인지
 		function ModalBtnChangeColor(button, code) {
     		if (button.classList.contains('btn-primary')) {
-    			hospital_subject = code; // 피부과
+    			hospital_subject = code; // 진료 과목
 		        button.classList.remove('btn-primary');
 		        button.classList.add('btn-primary-changed');
 		    } else {
