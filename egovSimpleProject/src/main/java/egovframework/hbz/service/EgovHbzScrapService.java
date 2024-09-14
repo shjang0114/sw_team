@@ -7,8 +7,6 @@ import org.springframework.ui.Model;
 
 public interface EgovHbzScrapService {
 
-	public void newsRank(Model model) throws Exception;
-
 	public void webtoonScrap(Model model) throws Exception;
 
 	public Map<String, Object> getVilageFcst(String area, String time) throws Exception;

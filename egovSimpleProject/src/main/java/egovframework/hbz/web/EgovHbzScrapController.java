@@ -31,17 +31,6 @@ public class EgovHbzScrapController {
 	@Autowired
 	EgovHbzScrapServiceImpl egovHbzScrapServiceImpl;
 
-	// 네이버 뉴스 랭킹
-	@RequestMapping(value = "/hbz/newsRank.do")
-	public String newsRank(Model model) throws Exception {
-
-		System.out.println("newsRank Start");
-
-		egovHbzScrapServiceImpl.newsRank(model);
-
-		return "/scrp/newsRank";
-	}
-
 	// 웹툰 페이지 스크래핑
 	@RequestMapping(value = "/hbz/webtoonScrap.do")
 	public String webtoonScrap(Model model) throws Exception {

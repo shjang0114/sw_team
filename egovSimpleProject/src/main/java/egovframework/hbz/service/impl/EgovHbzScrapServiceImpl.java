@@ -322,56 +322,6 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		return "답변을 받지 못했습니다.";
 	}
 
-	// 네이버 뉴스 랭킹 스크래핑
-	public void newsRank(Model model) throws Exception {
-
-		Map<String, Object> map = new HashMap<>();
-
-		String url = "https://news.naver.com/main/ranking/popularDay.naver";
-
-		Document doc = Jsoup.connect(url).get();
-		Element ele_div = doc.select("div.rankingnews_box").first();
-		Elements ele_img = ele_div.select("span.rankingnews_thumb");
-
-		System.out.println("###ele_img : " + ele_img);
-
-		Element ele_company = ele_div.getElementsByClass("rankingnews_name").get(0);
-		Elements ele_title_all = ele_div.getElementsByClass("list_title");
-		Elements ele_img_all = ele_div.getElementsByClass("list_img");
-
-		Element ele_title_list = null;
-		Element ele_img_list = null;
-		String ele_aTag = null;
-
-		int cnt = 1;
-
-		for (int i = 0; i < 5; i++) {
-
-			ele_aTag = ele_title_all.get(i).attr("href");
-			ele_title_list = ele_title_all.get(i);
-			ele_img_list = ele_img_all.get(i);
-
-			if (ele_img_list.html().contains("동영상기사")) {
-				String ele_img_list_rep = ele_img_list.toString().replaceAll("동영상기사", "");
-				map.put("img_list_0" + cnt, ele_img_list_rep);
-			} else {
-				map.put("img_list_0" + cnt, ele_img_list.html());
-			}
-			map.put("title_list_0" + cnt, ele_title_list.html());
-			map.put("href_list_0" + cnt, ele_aTag);
-
-			cnt++;
-		}
-
-		map.put("img_01", ele_img.html());
-		map.put("company_01", ele_company.html());
-
-		System.out.println("###map : " + map);
-
-		model.addAttribute("map", map);
-
-	}
-
 	// 웹툰 스크래핑
 	public void webtoonScrap(Model model) throws Exception {
 
