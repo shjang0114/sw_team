@@ -7,6 +7,9 @@
 #### ▶ 프로젝트 결과
 
 ## 프로젝트 개요
+**[ 개발 인원 ]**
+- 총 5인
+
 **[ 개발 기간 ]**   
 - 2023.10.25 ~ 2023.11.30
 
@@ -20,8 +23,7 @@
 - **ChatGPT API를 활용한 AI 자가진단을 통해 보다 효율적인 병원 탐색을 구현하였습니다.**
 
 **[ 개발 환경 ]**
-
-**[ 팀원 및 역할 ]**
+- JAVA, JSP, HTML, CSS, JavaScript, Apache Tomcat, eGovFrame, ChatGPT, Kakao Map, Geolocation, 공공데이터포털
 
 ## 프로젝트 상세
 프로젝트 상세 설명
