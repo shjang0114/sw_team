@@ -22,7 +22,7 @@
 - **Kakao 지도 API를 활용하여 병원의 위치를 확인하고**
 - **ChatGPT API를 활용한 AI 자가진단을 통해 보다 효율적인 병원 탐색을 구현하였습니다.**
 
-**[ 개발 환경 ]**
+**[ 개발 언어 및 도구 ]**
 - JAVA, JSP, HTML, CSS, JavaScript, Apache Tomcat, eGovFrame, ChatGPT, Kakao Map, Geolocation, 공공데이터포털
 
 ## 팀프로젝트 상세
