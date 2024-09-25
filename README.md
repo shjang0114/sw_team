@@ -42,6 +42,6 @@
 ### 메인 페이지
 ![01](https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6)
 - 메인 페이지 설명
-### 주요 기능 2
-**결과 이미지**
-- 팀프로젝트 결과 설명
+### AI 챗봇
+![06](https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468)
+- AI 챗봇 설명
