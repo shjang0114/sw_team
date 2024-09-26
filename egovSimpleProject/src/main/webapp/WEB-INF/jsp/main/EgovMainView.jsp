@@ -467,7 +467,28 @@
 											style="margin-right: 20px;"
 											onclick="ModalBtnChangeColor(this, '13')">귀가 아파요</button>
 										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											onclick="ModalBtnChangeColor(this, '13')">코가 아파요</button>
+									</div>
+									<div>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											style="margin-right: 20px;"
+											onclick="ModalBtnChangeColor(this, '49')">이가 아파요</button>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											onclick="ModalBtnChangeColor(this, '56')">입속이 아파요</button>
+									</div>
+									<div>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											style="margin-right: 20px;"
 											onclick="ModalBtnChangeColor(this, '56')">턱이 아파요</button>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											onclick="ModalBtnChangeColor(this, '4')">상처가 났어요</button>
+									</div>
+									<div>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											style="margin-right: 20px;"
+											onclick="ModalBtnChangeColor(this, '14')">피부에 문제가 있어요</button>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											onclick="ModalBtnChangeColor(this, '50')">뼈에 문제가 있어요</button>
 									</div>
 									<br>
 									<button class="btn btn-primary"
