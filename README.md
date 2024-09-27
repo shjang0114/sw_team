@@ -40,8 +40,12 @@
 
 ## 팀프로젝트 결과
 ### 메인 페이지
-![01](https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6)
+<img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6"  width="33%" />
+<img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64"  width="33%" />
+<img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c"  width="33%" />
+
 - 메인 페이지 설명
+
 ### AI 챗봇
 ![06](https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468)
 - AI 챗봇 설명
