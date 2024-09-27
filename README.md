@@ -43,9 +43,27 @@
 <img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6"  width="33%" />
 <img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64"  width="33%" />
 <img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c"  width="33%" />
+<img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed"  width="45%" />
+<img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9"  width="45%" />
 
 - 메인 페이지 설명
 
 ### AI 챗봇
-![06](https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468)
+<img src="https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468"  width="45%" />
+<img src="https://github.com/user-attachments/assets/5b36997e-4380-4ca8-bda0-7124a282d2da"  height="300" />
+<img src="https://github.com/user-attachments/assets/bc9b7be5-8c6c-47f3-9255-4832fd15f56c"  height="300" />
+<img src="https://github.com/user-attachments/assets/63994e4f-cc87-4a26-96ce-bcdb295b70e0"  height="300" />
+
 - AI 챗봇 설명
+
+### 병원 정보 확인
+<img src="https://github.com/user-attachments/assets/70e7c85a-4191-49c3-bf5d-85f3b7d1418d"  width="45%" />
+<img src="https://github.com/user-attachments/assets/0b8222c3-e3f7-46a2-8c0e-9ecdbc32ad4c"  width="45%" />
+
+- 병원 정보 설명
+
+### 병원 마커 전환
+<img src="https://github.com/user-attachments/assets/b3bb91d9-bf4b-4f74-b79e-518ab0ba4db6"  width="45%" />
+<img src="https://github.com/user-attachments/assets/4172338a-63a4-45cc-a8c7-0e7ef64b8735"  width="45%" />
+
+- 병원 마커 전환 설명
