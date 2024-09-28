@@ -51,10 +51,9 @@
 
 ### AI 챗봇
 <img src="https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468"  width="45%" />
-<br/>
-<img src="https://github.com/user-attachments/assets/5b36997e-4380-4ca8-bda0-7124a282d2da"  height="300" />
-<img src="https://github.com/user-attachments/assets/bc9b7be5-8c6c-47f3-9255-4832fd15f56c"  height="300" />
-<img src="https://github.com/user-attachments/assets/63994e4f-cc87-4a26-96ce-bcdb295b70e0"  height="300" />
+<img src="https://github.com/user-attachments/assets/5b36997e-4380-4ca8-bda0-7124a282d2da"  height="250" />
+<img src="https://github.com/user-attachments/assets/bc9b7be5-8c6c-47f3-9255-4832fd15f56c"  height="250" />
+<img src="https://github.com/user-attachments/assets/63994e4f-cc87-4a26-96ce-bcdb295b70e0"  height="250" />
 
 - AI 챗봇 설명
 
