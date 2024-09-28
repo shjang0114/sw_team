@@ -49,8 +49,8 @@
 <img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64"  width="30%" />
 <img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c"  width="33%" />
 <br/>
-<img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed"  width="45%" />
-<img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9"  width="45%" />
+<img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed"  width="48%" />
+<img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9"  width="48%" />
 
 - 실제 사람의 신체를 표현한 UI를 통해  직관성을 강화했습니다. 각 부위를 선택 시, 증상 선택으로 전환됩니다.
 - 해당 부위에 대한 증상 목록을 확인하고 선택할 수 있습니다. 증상 선택 후 완료 시, 자동으로 지도 화면으로 이동합니다.
