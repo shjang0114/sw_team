@@ -52,20 +52,21 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 
 	Logger logger = LoggerFactory.getLogger(EgovHbzScrapServiceImpl.class);
 
-	// [ Base URL: apis.data.go.kr/B551182/hospInfoServicev2 ]
 	final String base_url = "https://apis.data.go.kr/B551182/hospInfoServicev2";
-
-	// 공공데이터포털 - 병원 기본 정보 테스트 (XML)
+	final String base_url2 = "https://apis.data.go.kr/B551182/MadmDtlInfoService2.6";
+	
+	// 공공데이터포털 - 병원 기본 정보 (XML)
 	@Override
 	public List<Map<String, Object>> hospitalInfo(String address, String code) throws Exception {
 		List<Map<String, Object>> hospitalList = new ArrayList<>();
 
+		// 병원 정보 서비스 API 호출
 		String url = base_url + "/getHospBasisList?";
 		Document doc = Jsoup.connect(url)
-				.data("ServiceKey", DEC_KEY) // 인증키
+				.data("ServiceKey", DEC_KEY)
 				.data("emdongNm", address) // 주소
-				.data("dgsbjtCd", code) // 진료 코드 (예시:02 - 신경과)
-				.timeout(60000) // 시간 초과
+				.data("dgsbjtCd", code) // 진료과
+				.timeout(60000)
 				.get();
 
 		// XML 파싱
@@ -156,13 +157,31 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		}
 		return hospitalList;
 	}
-
-	// 공공데이터포털 - 병원 상세 정보 테스트 (JSON)
+	
+	// 공공데이터포털 - 병원 상세 정보 (JSON)
 	public Map<String, Object> HospitalPage(String ykiho) throws Exception {
-		System.out.println("### HospitalPage Start");
+		
+		// 의료기관별 상세 정보 서비스 API 호출
+		String url = base_url2 + "/getDtlInfo2.6?";
+		Document doc = Jsoup.connect(url)
+				.data("serviceKey", DEC_KEY)
+				.data("ykiho", ykiho) // 요양 코드
+				.data("_type", "json") // 데이터 타입
+				.timeout(600000)
+				.ignoreContentType(true)
+				.get();
 
-		String url = "https://apis.data.go.kr/B551182/MadmDtlInfoService2.6/getDtlInfo2.6";
+		// JSON 파싱
+		String data = doc.text();
 
+		JSONParser parser = new JSONParser();
+		JSONObject object = (JSONObject) parser.parse(data);
+		
+		JSONObject response = (JSONObject) object.get("response");
+		JSONObject body = (JSONObject) response.get("body");
+		
+		Object items_object = body.get("items");
+		
 		String trmtMonStart = null;
 		String trmtMonEnd = null;
 		String trmtTueStart = null;
@@ -177,56 +196,27 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		String trmtSatEnd = null;
 		String trmtSunStart = null;
 		String trmtSunEnd = null;
+		
+		if (items_object != null && items_object instanceof JSONObject) {
+			
+			JSONObject items = (JSONObject) body.get("items");
+			JSONObject item = (JSONObject) items.get("item");
 
-		Document doc = Jsoup.connect(url)
-				.data("serviceKey", DECODING_KEY) // 인증키
-				.data("ykiho", ykiho) // 요양 코드
-				.data("_type", "json") // 데이터 타입
-				.timeout(600000) // 시간 초과
-				.ignoreContentType(true) // 콘텐츠 타입 무시
-				.get();
-
-		System.out.println("### doc ###		" + doc.text());
-
-		String jsonStr = doc.text();
-
-		JSONParser jsonParser = new JSONParser();
-		JSONObject jsonObject = (JSONObject) jsonParser.parse(jsonStr);
-
-		JSONObject jsonResponse = (JSONObject) jsonObject.get("response");
-		System.out.println("### jsonResponse ###	" + jsonResponse.toString());
-		System.out.println("");
-
-		JSONObject json_Body = (JSONObject) jsonResponse.get("body");
-		System.out.println("### json_Body ###	" + json_Body.toString());
-		System.out.println("");
-
-		Object json_items_object = json_Body.get("items");
-		// System.out.println("테스트 : " + json_items_object.getClass().getName());
-
-		if (json_items_object != null && json_items_object instanceof JSONObject) {
-			JSONObject json_items = (JSONObject) json_Body.get("items");
-			// System.out.println("### json_items ### " + json_items.toString());
-			// System.out.println("");
-
-			JSONObject json_item = (JSONObject) json_items.get("item");
-			// System.out.println("### json_item ### " + json_item.toString());
-			// System.out.println("");
-
-			trmtMonStart = String.valueOf(json_item.get("trmtMonStart")); // 월요일 진료 시작
-			trmtMonEnd = String.valueOf(json_item.get("trmtMonEnd")); // 월요일 진료 종료
-			trmtTueStart = String.valueOf(json_item.get("trmtTueStart")); // 화요일 진료 시작
-			trmtTueEnd = String.valueOf(json_item.get("trmtTueEnd")); // 화요일 진료 종료
-			trmtWedStart = String.valueOf(json_item.get("trmtWedStart")); // 수요일 진료 시작
-			trmtWedEnd = String.valueOf(json_item.get("trmtWedEnd")); // 수요일 진료 종료
-			trmtThuStart = String.valueOf(json_item.get("trmtThuStart")); // 목요일 진료 시작
-			trmtThuEnd = String.valueOf(json_item.get("trmtThuEnd")); // 목요일 진료 종료
-			trmtFriStart = String.valueOf(json_item.get("trmtFriStart")); // 금요일 진료 시작
-			trmtFriEnd = String.valueOf(json_item.get("trmtFriEnd")); // 금요일 진료 종료
-			trmtSatStart = String.valueOf(json_item.get("trmtSatStart")); // 토요일 진료 시작
-			trmtSatEnd = String.valueOf(json_item.get("trmtSatEnd")); // 토요일 진료 종료
-			trmtSunStart = String.valueOf(json_item.get("trmtSunStart")); // 일요일 진료 시작
-			trmtSunEnd = String.valueOf(json_item.get("trmtSunEnd")); // 일요일 진료 종료
+			// 각 'item' 요소에서 필요한 데이터 추출
+			trmtMonStart = String.valueOf(item.get("trmtMonStart")); // 월요일 진료 시작
+			trmtMonEnd = String.valueOf(item.get("trmtMonEnd")); // 월요일 진료 종료
+			trmtTueStart = String.valueOf(item.get("trmtTueStart")); // 화요일 진료 시작
+			trmtTueEnd = String.valueOf(item.get("trmtTueEnd")); // 화요일 진료 종료
+			trmtWedStart = String.valueOf(item.get("trmtWedStart")); // 수요일 진료 시작
+			trmtWedEnd = String.valueOf(item.get("trmtWedEnd")); // 수요일 진료 종료
+			trmtThuStart = String.valueOf(item.get("trmtThuStart")); // 목요일 진료 시작
+			trmtThuEnd = String.valueOf(item.get("trmtThuEnd")); // 목요일 진료 종료
+			trmtFriStart = String.valueOf(item.get("trmtFriStart")); // 금요일 진료 시작
+			trmtFriEnd = String.valueOf(item.get("trmtFriEnd")); // 금요일 진료 종료
+			trmtSatStart = String.valueOf(item.get("trmtSatStart")); // 토요일 진료 시작
+			trmtSatEnd = String.valueOf(item.get("trmtSatEnd")); // 토요일 진료 종료
+			trmtSunStart = String.valueOf(item.get("trmtSunStart")); // 일요일 진료 시작
+			trmtSunEnd = String.valueOf(item.get("trmtSunEnd")); // 일요일 진료 종료
 
 			if (trmtSatStart == "null") {
 				trmtSatStart = "0000";
