@@ -26,7 +26,8 @@
 				class="nav-link py-3 px-0 px-lg-3 rounded"
 				onclick="toggleChatbotHelp()" style="cursor: pointer;">챗봇</a></li>
 			<li class="nav-item mx-0 mx-lg-1"><a
-				class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal" data-bs-target="#quizModal" style="cursor: pointer;">건강퀴즈</a></li>
+				class="nav-link py-3 px-0 px-lg-3 rounded" data-bs-toggle="modal"
+				data-bs-target="#quizModal" style="cursor: pointer;">건강퀴즈</a></li>
 		</ul>
 	</div>
 </div>
@@ -102,8 +103,8 @@
 	cursor: pointer;
 }
 
-#chatbot-send:hover{
-   background-color: rgba(177, 142, 217, 1);
+#chatbot-send:hover {
+	background-color: rgba(177, 142, 217, 1);
 }
 
 .chatbot-inner::after {
@@ -133,18 +134,18 @@
 
 /* 점 애니메이션에 ‘transform-origin’ 속성과 ‘opacity’ 변화 추가 */
 @keyframes dotPulse {
-  0% {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
-  50% {
-    transform: scale(1.4);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.9);
-    opacity: 0.7;
-  }
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
+	50% {
+		transform: scale(1.4);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;
+	}
 }
 /* 말풍선 스타일 */
 .chat-message {
@@ -215,11 +216,9 @@
 	background-color: rgba(187, 152, 227, 1);
 }
 
-
-
 #toggle-symptom-buttons {
 	background-color: #CFACF7;
-	color:white;
+	color: white;
 	padding: 10px 20px; /* 상하 10px, 좌우 20px 패딩 */
 	border: none; /* 테두리 없음 */
 	border-radius: 5px; /* 둥근 모서리 */
@@ -262,28 +261,26 @@
 }
 
 @keyframes growEffect {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0);
+	}
 }
 </style>
-
 
 <div id="chatbotHelp" class="chatbot-help">
 
 	<div class="chatbot-inner">
-
 		<div id="chatbot-messages"></div>
+		
 		<div id="loading" style="display: none;">
 			<div class="dot"></div>
 			<div class="dot"></div>
 			<div class="dot"></div>
 		</div>
-
-
+		
 		<div id="symptom-buttons" class="symptom-button-container"
 			style="padding: 10px;">
 			<button class="symptom-btn" data-symptom="머리가 쑤신데">머리가 쑤심</button>
@@ -294,15 +291,19 @@
 			<button class="symptom-btn" data-symptom="목이 쑤신데">목이 쑤심</button>
 			<button class="symptom-btn" data-symptom="가슴이 따가운데">가슴이 따가움</button>
 			<button class="symptom-btn" data-symptom="가슴이 골절인데">가슴이 골절</button>
-			<button class="symptom-btn" data-symptom="배가 찌르듯이 아픈데">배가 찌르듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="배가 찌르듯이 아픈데">배가
+				찌르듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="성기가 따가운데">성기가 따가움</button>
 			<button class="symptom-btn" data-symptom="성기가 골절인데">성기가 골절</button>
-			<button class="symptom-btn" data-symptom="어깨가 쑤시듯이 아픈데">어깨가 쑤시듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="어깨가 쑤시듯이 아픈데">어깨가
+				쑤시듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="어깨가 골절인데">어깨가 골절</button>
-			<button class="symptom-btn" data-symptom="팔이 쑤시듯이 아픈데">팔이 쑤시듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="팔이 쑤시듯이 아픈데">팔이
+				쑤시듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="팔이 골절인데">팔이 골절</button>
 			<button class="symptom-btn" data-symptom="손이 따가운데">손이 따가움</button>
-			<button class="symptom-btn" data-symptom="손이 쑤시듯이 아픈데">손이 쑤시듯이 아픔</button>
+			<button class="symptom-btn" data-symptom="손이 쑤시듯이 아픈데">손이
+				쑤시듯이 아픔</button>
 			<button class="symptom-btn" data-symptom="손이 골절인데">손이 골절</button>
 			<button class="symptom-btn" data-symptom="골반이 쑤신데">골반이 쑤심</button>
 			<button class="symptom-btn" data-symptom="골반이 골절인데">골반이 골절</button>
@@ -319,10 +320,11 @@
 			<button class="symptom-btn" data-symptom="엉덩이가 쑤신데">엉덩이가 쑤심</button>
 			<button class="symptom-btn" data-symptom="엉덩이가 골절인데">엉덩이가 골절</button>
 		</div>
+		
 		<button id="toggle-symptom-buttons">숨기기</button>
 		<button id="increase-font-size">+</button>
 		<button id="decrease-font-size">-</button>
-
+		
 		<input type="text" id="chatbot-input" placeholder="메시지 입력">
 		<button id="chatbot-send">보내기</button>
 	</div>

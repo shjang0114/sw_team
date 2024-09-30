@@ -164,7 +164,7 @@
 						<!-- 오른쪽 어깨 버튼 -->
 						<div id="shoulder-btn" class="position-absolute translate-middle"
 							style="top: 20%; left: 66.5%;">
-							<button class="btn btn-primary btn-opacity"s
+							<button class="btn btn-primary btn-opacity" s
 								style="width: 70px; height: 30px; border-radius: 50%; transform: rotate(25deg);"
 								data-bs-toggle="modal" data-bs-target="#hospitalModal3"></button>
 						</div>
@@ -486,7 +486,8 @@
 									<div>
 										<button class="btn btn-primary col-5 mb-3 modalbtn"
 											style="margin-right: 20px;"
-											onclick="ModalBtnChangeColor(this, '14')">피부에 문제가 있어요</button>
+											onclick="ModalBtnChangeColor(this, '14')">피부에 문제가
+											있어요</button>
 										<button class="btn btn-primary col-5 mb-3 modalbtn"
 											onclick="ModalBtnChangeColor(this, '50')">뼈에 문제가 있어요</button>
 									</div>
