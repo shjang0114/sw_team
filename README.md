@@ -6,7 +6,7 @@
 #### ▶ 팀프로젝트 상세   
 #### ▶ 팀프로젝트 결과
 
-## 팀프로젝트 개요
+## ▶ 팀프로젝트 개요
 **[ 개발 기간 ]**   
 - 2023.10.25 ~ 2023.11.30
 
@@ -26,9 +26,9 @@
 - 프로젝트 기획, 병원 기본정보 API, 병원 상세정보 API, 시간대별 마킹 전환
 
 **[ 개발 언어 및 도구 ]**
-- JAVA, JSP, HTML, CSS, JavaScript, Apache Tomcat, eGovFrame, OpenAI API, Kakao Map, Geolocation, 공공데이터포털
+- JAVA, JSP, HTML, CSS, JavaScript, Bootstrap, Apache Tomcat, eGovFrame, OpenAI API, Kakao Map, Geolocation, 공공데이터포털
 
-## 팀프로젝트 상세
+## ▶ 팀프로젝트 상세
 <img src="https://github.com/user-attachments/assets/2e2afd2f-eae1-49d0-98e3-fcb581594bf4"  width="70%" />
 
 - 사용자는 신체 부위를 선택하고 부위에 맞는 증상을 선택 시 진료과가 정해집니다. 그리고 사용자의 현재 위치 정보를 받아 병원 기본 정보 API를 호출합니다.
@@ -44,8 +44,8 @@
 - OpenAI API를 통해 ChatGPT가 진단한 정보는 JSON 형태로 응답하고, 프롬프트 설정에 맞춰 필요한 값을 추출합니다.
 - 추출된 값은 String 형태로 전송됩니다. 그리고 해당 정보를 화면에 출력합니다
 
-## 팀프로젝트 결과
-### 메인 페이지
+## ▶ 팀프로젝트 결과
+### ※ 메인 페이지
 <img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6"  width="33%" />
 <img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64"  width="30%" />
 <img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c"  width="33%" />
@@ -58,7 +58,7 @@
 - 현재 사용자의 위치를 파란색 마커로 확인할 수 있습니다. 사용자의 위치를 기준으로, 사용자의 증상을 진단할 수 있는 병원들의 위치 및 정보를 추가로 확인할 수 있습니다.
 - 성별 및 전후면 전환으로 추가 부위 및 증상을 선택할 수 있습니다. 
 
-### AI 챗봇
+### ※ AI 챗봇
 <img src="https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468"  width="45%" />
 <img src="https://github.com/user-attachments/assets/5b36997e-4380-4ca8-bda0-7124a282d2da"  height="250" />
 <img src="https://github.com/user-attachments/assets/bc9b7be5-8c6c-47f3-9255-4832fd15f56c"  height="250" />
@@ -66,7 +66,7 @@
 
 - OpenAI API를 활용하여 자가 진단을 도와주는 챗봇을 구현하였습니다. 정확한 진료과만 선별될 수 있도록 프롬프트를 지정하였습니다. 사용자는 채팅 혹은 버튼을 통해 자신의 증상 정보를 파라미터 값으로 전달하고, 값에 대해 ChatGPT가 진단한 정보는 JSON 형태로 전송되어 필요한 정보만을 추출한 후 String 형태로 전송됩니다. 그리고 해당 정보가 화면에 출력되도록 구현하였습니다.
 
-### 병원 정보 확인
+### ※ 병원 정보 확인
 <img src="https://github.com/user-attachments/assets/70e7c85a-4191-49c3-bf5d-85f3b7d1418d"  width="45%" />
 <img src="https://github.com/user-attachments/assets/0b8222c3-e3f7-46a2-8c0e-9ecdbc32ad4c"  width="45%" />
 
@@ -74,7 +74,7 @@
 - 상세 정보 API를 활용하여 해당 병원의 상세 정보를 보여줍니다. 이전에 추출한 요양코드를 파라미터 값으로 하여 JSON 형태의 병원 상세 정보 API를 호출하였습니다. 해당 데이터도 JSOUP 라이브러리로 파싱 하여 각 병원의 주요 정보와 진료 시간을 추출하였습니다. 추출한 진료 시간은 각 병원 마커에 마우스를 올려두면 확인할 수 있도록 구현하였습니다.
 
 
-### 병원 마커 전환
+### ※ 병원 마커 전환
 <img src="https://github.com/user-attachments/assets/b3bb91d9-bf4b-4f74-b79e-518ab0ba4db6"  width="45%" />
 <img src="https://github.com/user-attachments/assets/4172338a-63a4-45cc-a8c7-0e7ef64b8735"  width="45%" />
 
