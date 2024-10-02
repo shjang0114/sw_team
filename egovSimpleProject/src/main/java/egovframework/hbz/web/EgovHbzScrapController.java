@@ -31,15 +31,6 @@ public class EgovHbzScrapController {
 	@Autowired
 	EgovHbzScrapServiceImpl egovHbzScrapServiceImpl;
 
-	// 웹툰 페이지 스크래핑
-	@RequestMapping(value = "/hbz/webtoonScrap.do")
-	public String webtoonScrap(Model model) throws Exception {
-
-		egovHbzScrapServiceImpl.webtoonScrap(model);
-
-		return "/scrp/webtoonScrap";
-	}
-
 	// DB조회 후 스크래핑 페이지로 전환
 	@RequestMapping(value = "/hbz/scrap.do", method = RequestMethod.GET)
 	public String scrapPage(@RequestParam int pageNo, Model model) throws Exception {
@@ -83,7 +74,7 @@ public class EgovHbzScrapController {
 		return "/scrp/getVilageFcst";
 	}
 
-	// 공공데이터포털 - 병원 기본정보
+	// 공공데이터포털 - 병원 기본 정보
 	@RequestMapping(value = "/hbz/Hospital.do", method = RequestMethod.GET)
 	public String hostpitalInfo(@RequestParam("address") String address, String code, Model model) throws Exception {
 		List<Map<String, Object>> hospitalList = egovHbzScrapServiceImpl.hospitalInfo(address, code);
@@ -99,7 +90,7 @@ public class EgovHbzScrapController {
 		return "/main/EgovMainView";
 	}
 
-	// 공공데이터포털 - 병원 상세정보
+	// 공공데이터포털 - 병원 상세 정보
 	@RequestMapping(value = "/hbz/HospitalInfo.do", method = RequestMethod.GET)
 	public String HospitalPage(@RequestParam("ykiho") String ykiho, Model model) throws Exception {
 		System.out.println("Received ykiho: " + ykiho);
@@ -116,7 +107,7 @@ public class EgovHbzScrapController {
 		return "/main/EgovMainView";
 	}
 
-	// 챗봇
+	// AI 챗봇
 	@RequestMapping(value = "/hbz/getGPT3Response.do", method = RequestMethod.GET)
 	@ResponseBody
 	public Map<String, String> getGPT3Response(@RequestParam(value = "question", required = false) String question) throws Exception {

@@ -312,24 +312,6 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		return "답변을 받지 못했습니다.";
 	}
 
-	// 웹툰 스크래핑
-	public void webtoonScrap(Model model) throws Exception {
-
-		Map<String, Object> map = new HashMap<String, Object>();
-
-		String url = "https://comic.naver.com/webtoon/detail?titleId=783053&no=75";
-
-		Document doc = Jsoup.connect(url).get();
-
-		System.out.println(doc.html());
-
-		Elements ele = doc.select("div.wt_viewer");
-
-		map.put("html", ele.html());
-
-		model.addAttribute("map", map);
-	}
-
 	// 공공데이터포털 - 기상청 [단기예보조회]
 	public Map<String, Object> getVilageFcst(String in_area, String in_time) throws Exception {
 
