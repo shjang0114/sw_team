@@ -63,7 +63,8 @@ public class EgovHbzScrapController {
 
 	// 공공데이터포털 -기상청 [단기예보]
 	@RequestMapping(value = "/hbz/getVilageFcst.do", method = RequestMethod.GET)
-	public String getVilageFcst(@RequestParam String in_area, @RequestParam String in_time, Model model) throws Exception {
+	public String getVilageFcst(@RequestParam String in_area, @RequestParam String in_time, Model model)
+			throws Exception {
 		System.out.println("in_area : " + in_area);
 		System.out.println("in_time : " + in_time);
 
@@ -76,7 +77,8 @@ public class EgovHbzScrapController {
 
 	// 공공데이터포털 - 병원 기본 정보
 	@RequestMapping(value = "/hbz/Hospital.do", method = RequestMethod.GET)
-	public String hostpitalInfo(@RequestParam("address") String address, String code, Model model) throws Exception {
+	public String hostpitalInfo(@RequestParam("address") String address, @RequestParam("code") String code, Model model)
+			throws Exception {
 		List<Map<String, Object>> hospitalList = egovHbzScrapServiceImpl.hospitalInfo(address, code);
 		System.out.println("Received address: " + address);
 		System.out.println("Received code: " + code);
@@ -110,7 +112,8 @@ public class EgovHbzScrapController {
 	// AI 챗봇
 	@RequestMapping(value = "/hbz/getGPT3Response.do", method = RequestMethod.GET)
 	@ResponseBody
-	public Map<String, String> getGPT3Response(@RequestParam(value = "question", required = false) String question) throws Exception {
+	public Map<String, String> getGPT3Response(@RequestParam(value = "question", required = false) String question)
+			throws Exception {
 		logger.info("질문 처리 시작: " + question);
 
 		// ChatGPT API를 호출하여 답변 받기

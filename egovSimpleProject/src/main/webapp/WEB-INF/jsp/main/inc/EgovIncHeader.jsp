@@ -32,9 +32,6 @@
 	</div>
 </div>
 
-
-
-
 <script>
 	function toggleChatbotHelp() {
 		var chatbotHelp = document.getElementById("chatbotHelp");

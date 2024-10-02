@@ -48,12 +48,9 @@
 			<section class="page-section hospital" id="hospital">
 			<div class="container">
 				<br>
-
 				<div class="row justify-content-center">
-
 					<div class="col-md-6 col-lg-4 mb-5"
 						style="position: relative; display: flex; justify-content: center; align-items: center; height: 100%; transform: translateY(-25px);">
-
 
 						<!-- 인체 모양-->
 						<c:url value='/images/human.png' var="imgSrc" />
@@ -391,7 +388,6 @@
 							</div>
 						</div>
 
-
 					</div>
 
 				</div>
@@ -419,7 +415,6 @@
 					id="map"></div>
 			</div>
 			</section>
-
 		</div>
 		<!-- footer 시작 -->
 		<div id="footer">
@@ -427,9 +422,6 @@
 		</div>
 		<!-- //footer 끝 -->
 		<!-- //전체 레이어 끝 -->
-
-
-
 
 		<!-- 모달창 구간 -->
 
@@ -1158,7 +1150,6 @@
 												시작</button>
 										</div>
 									</div>
-
 								</div>
 							</div>
 						</div>
@@ -1166,7 +1157,6 @@
 				</div>
 			</div>
 		</div>
-
 
 		<!-- Bootstrap core JS-->
 		<script
@@ -1295,7 +1285,6 @@
 		      var answer = response.answer;
 		      var gpt3Html = "<div class='chat-message gpt3-message'>" + answer + "</div>";
 		      $('#chatbot-messages').append(gpt3Html);
- 
 		    });
 		  }
 		}
