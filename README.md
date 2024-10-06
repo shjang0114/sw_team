@@ -96,3 +96,10 @@
 - 병원 상세 정보 API에서 추출한 운영 시간 데이터를 활용하였습니다.
 - 각 병원마다 진료 중인 경우에는 초록색 마커로 표시가 되게 하였습니다.
 - 진료를 할 수 없는 시간대인 경우에는 빨간색 마커로 표시가 되게 구현하였습니다.
+
+### ※ 건강 퀴즈
+<img src="https://github.com/user-attachments/assets/25032a82-2e7e-4f45-8c12-0e6c488d8dd3"  width="45%" />
+<img src="https://github.com/user-attachments/assets/9e015efc-f949-4e73-9bb0-23ed8f21adcb"  width="45%" />
+
+- 우측 상단 건강 퀴즈 버튼을 통해 건강과 관련된 퀴즈를 풀 수 있습니다.
+- 랜덤한 문제들이 나오고 퀴즈를 푼 후에 답을 확인할 수 있습니다.
