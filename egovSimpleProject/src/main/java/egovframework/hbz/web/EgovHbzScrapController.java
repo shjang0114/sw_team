@@ -31,7 +31,7 @@ public class EgovHbzScrapController {
 	@Autowired
 	EgovHbzScrapServiceImpl egovHbzScrapServiceImpl;
 
-	// DB조회 후 스크래핑 페이지로 전환
+	// DB 조회 후 스크래핑 페이지로 전환
 	@RequestMapping(value = "/hbz/scrap.do", method = RequestMethod.GET)
 	public String scrapPage(@RequestParam int pageNo, Model model) throws Exception {
 
@@ -61,7 +61,7 @@ public class EgovHbzScrapController {
 		return "/scrp/ScrapPage";
 	}
 
-	// 공공데이터포털 -기상청 [단기예보]
+	// 공공데이터포털 - 기상청 [단기예보]
 	@RequestMapping(value = "/hbz/getVilageFcst.do", method = RequestMethod.GET)
 	public String getVilageFcst(@RequestParam String in_area, @RequestParam String in_time, Model model)
 			throws Exception {

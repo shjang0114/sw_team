@@ -39,21 +39,19 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 
 	@Autowired
 	EgovHbzScrpDao egovHbzScrpDao;
+	
+	Logger logger = LoggerFactory.getLogger(EgovHbzScrapServiceImpl.class);
 
 	// 공공데이터포털 API KEY
-	final String ENCODING_KEY = "9toq77DZvOo2Wo4a9jGNKUlG%2BogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ%3D%3D";
-	final String DECODING_KEY = "9toq77DZvOo2Wo4a9jGNKUlG+ogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ==";
-
 	final String KEY = "9toq77DZvOo2Wo4a9jGNKUlG%2BogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ%3D%3D";
 	final String DEC_KEY = "9toq77DZvOo2Wo4a9jGNKUlG+ogjcApjs3texQK9Xj0brXm1Qs2l3mt0pSzBkYyoaKhO6izphKkgGxT9w7SRHQ==";
 
-	// ChatGPT API KEY
-	final String OPENAI_API_KEY = "ChatGPT API KEY";
-
-	Logger logger = LoggerFactory.getLogger(EgovHbzScrapServiceImpl.class);
-
+	// 공공데이터포털 API Address
 	final String base_url = "https://apis.data.go.kr/B551182/hospInfoServicev2";
 	final String base_url2 = "https://apis.data.go.kr/B551182/MadmDtlInfoService2.6";
+	
+	// OpenAI API KEY
+	final String OPENAI_API_KEY = "OpenAI API KEY";
 	
 	// 공공데이터포털 - 병원 기본 정보 (XML)
 	@Override
@@ -135,7 +133,7 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 			System.out.println("yadmNm: " + yadmNm);
 			System.out.println("ykiho: " + ykiho);
 
-			// Map에 병원 정보 저장 (테스트로 2개만 뽑자)
+			// Map에 병원 정보 저장
 			Map<String, Object> hospitalInfo = new HashMap<>();
 			hospitalInfo.put("addr", addr);
 			hospitalInfo.put("telno", telno);
@@ -337,7 +335,7 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		System.out.println("###nx : " + nx);
 		System.out.println("###ny : " + ny);
 
-		Document doc = Jsoup.connect(url).data("ServiceKey", DECODING_KEY) // 인증키
+		Document doc = Jsoup.connect(url).data("ServiceKey", DEC_KEY) // 인증키
 				.data("pageNo", "1") // 페이지 번호
 				.data("numOfRows", "1000") // 한 페이지 결과 수
 				.data("dataType", "JSON") // 요청자료형식(XML, JSON)
@@ -442,7 +440,7 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 		System.out.println("### base_date ### " + base_date);
 		System.out.println("### base_time ### " + base_time);
 
-		Document doc = Jsoup.connect(url).data("ServiceKey", DECODING_KEY) // 인증키
+		Document doc = Jsoup.connect(url).data("ServiceKey", DEC_KEY) // 인증키
 				.data("pageNo", "1") // 페이지 번호
 				.data("numOfRows", "1000") // 한 페이지 결과 수
 				.data("dataType", "JSON") // 요청자료형식(XML, JSON)

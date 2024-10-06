@@ -1,15 +1,3 @@
-<%--
-  Class Name : EgovMainView.jsp 
-  Description : 메인화면
-  Modification Information
- 
-      수정일         수정자                   수정내용
-    -------    --------    ---------------------------
-     2011.08.31   JJY       경량환경 버전 생성
- 
-    author   : 실행환경개발팀 JJY
-    since    : 2011.08.31 
---%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -1587,7 +1575,7 @@
 				});
 			}
 		
-		//성별 변경 온로드
+		// 성별 변경 온로드
 		window.onload = function() {
 		    GenderChange();
 		};
@@ -1626,7 +1614,7 @@
 		    }, 250); // 0.25초 후 이미지 변경
 		}
 
-        // 인체모양 전후면 교체
+        // 인체 모양 전후면 교체
         function HumanFrontBackChange() {
             const frontElements = document.querySelectorAll(".front");
             const backElements = document.querySelectorAll(".back");
@@ -1634,7 +1622,7 @@
 
             let isFront = true;
 
-            //전면-후면 교체            
+            // 전면-후면 교체            
             changeBtn.addEventListener("click", function () {
                 if (isFront) {
                     frontElements.forEach(frontElement => {
@@ -1690,12 +1678,12 @@
 		    closeModal(modalId); // 모달을 닫음
 		}
 
-		//모달창 질문 선택
+		// 모달창 질문 선택
 		function setInput(input) {
 	    	document.getElementById('input').value = input;
 		}
 		
-		//모달 버튼색 체인지
+		// 모달 버튼색 체인지
 		function ModalBtnChangeColor(button, code) {
     		if (button.classList.contains('btn-primary')) {
     			hospital_subject = code; // 진료 과목
@@ -1824,7 +1812,7 @@
 	                document.getElementById('resultMessage').innerHTML = "정답입니다! <br>설명:" + explanation;
 	                score++;
 	            } else {
-	                document.getElementById('resultMessage').innerHTML = "틀렸습니다!<br>설명: " + explanation;
+	                document.getElementById('resultMessage').innerHTML = "틀렸습니다! <br>설명: " + explanation;
 	            }
 	        }
 	        document.getElementById('answerO').checked = false;

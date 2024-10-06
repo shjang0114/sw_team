@@ -19,6 +19,6 @@ public interface EgovHbzScrapService {
 	// 병원 상세 정보 호출
 	public Map<String, Object> HospitalPage(String ykiho) throws Exception;
 
-	// ChatGPT API 호출
+	// OpenAI API 호출
 	public String getResponseFromGPT3(String userMessage) throws Exception;
 }

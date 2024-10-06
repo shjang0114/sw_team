@@ -10,7 +10,7 @@
 	<!-- 좌측의 홈페이지 제목, 클릭 시 상단으로 이동-->
 	<a class="navbar-brand" href="#hospital">Hospinet</a>
 
-	<!-- 반응형으로 화면의 width 크기가 작아졌을 때 메뉴 버튼이 생기고, 클릭했을때 하단 하위 메뉴들이 생김-->
+	<!-- 반응형으로 화면의 width 크기가 작아졌을 때 메뉴 버튼이 생기고, 클릭했을 때 하단 하위 메뉴들이 생김-->
 	<button
 		class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
 		type="button" data-bs-toggle="collapse"
