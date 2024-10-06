@@ -2,7 +2,7 @@
 사용자 위치기반 전문병원 탐색 및 AI 진단 서비스
 
 ## 목차
-#### ▶ 팀프로젝트 개요   
+[팀프로젝트 결과](#팀프로젝트-결과)   
 #### ▶ 팀프로젝트 상세   
 #### ▶ 팀프로젝트 결과
 
@@ -46,7 +46,7 @@
 - OpenAI API를 통해 ChatGPT가 진단한 정보는 JSON 형태로 응답하고, 프롬프트 설정에 맞춰 필요한 값을 추출합니다.
 - 추출된 값은 String 형태로 전송됩니다. 그리고 해당 정보를 화면에 출력합니다
 
-## ▶ 팀프로젝트 결과
+## 팀프로젝트 결과
 ### ※ 메인 페이지
 <img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6"  width="33%" />
 <img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64"  width="30%" />
