@@ -15,8 +15,8 @@
 
 **[ 개발 동기 ]**
 
-<img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"  width="25%" />
 <img src="https://github.com/user-attachments/assets/aee81e4f-c29c-4459-90d8-1223d079239a"  width="55%" />
+<img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"  width="25%" />
 
 - 우리나라는 OECD 국가들 가운데 고령화 인구 비율이 급격히 증가하는 추세입니다.
 - 그로 인해 정보화기기 이용자 또한 고령화 인구 비율이 증가하는 와중에 기능이 복잡하거나 불편한 UI로 사용에 어려움을 겪고 있습니다.
