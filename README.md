@@ -16,7 +16,7 @@
 **[ 개발 동기 ]**
 
 <img src="https://github.com/user-attachments/assets/aee81e4f-c29c-4459-90d8-1223d079239a"  width="35%" />
-<img src="https://github.com/user-attachments/assets/d06ba4c5-eda5-420d-a9bf-9d93d4bf62df"  width="35%" />
+<img src="https://github.com/user-attachments/assets/2822e807-7a79-44c4-bf2a-bf649edb28c7"  width="35%" />
 <img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"  width="20%" />
 
 - 우리나라는 OECD 국가들 가운데, 고령화 인구 비율이 급격히 증가하는 추세입니다.
