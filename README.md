@@ -14,13 +14,13 @@
 - 총 5인 <팀원>
 
 **[ 개발 동기 ]**
+<img src="https://github.com/user-attachments/assets/aee81e4f-c29c-4459-90d8-1223d079239a"  width="35%" />
+<img src="https://github.com/user-attachments/assets/d06ba4c5-eda5-420d-a9bf-9d93d4bf62df"  width="35%" />
+<img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"  width="20%" />
 
-<img src="https://github.com/user-attachments/assets/aee81e4f-c29c-4459-90d8-1223d079239a"  width="55%" />
-<img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"  width="25%" />
-
-- 우리나라는 OECD 국가들 가운데 고령화 인구 비율이 급격히 증가하는 추세입니다.
-- 정보화기기 이용자 또한 고령화 인구 비율이 증가하는 와중에 기능이 복잡하거나 불편한 UI로 사용에 어려움을 겪고 있습니다.
-- 또한 주로 가던 병원이 문을 닫거나 진료과를 잘못 찾을 시 다른 병원을 찾기까지 시간이 소요됩니다.
+- 우리나라는 OECD 국가들 가운데, 고령화 인구 비율이 급격히 증가하는 추세입니다.
+- 정보화기기 이용자 또한 고령자 비율이 상당한 와중에, 기능이 복잡하거나 불편한 UI로 사용에 어려움을 겪고 있습니다.
+- 또한 주로 가던 병원이 문을 닫거나 진료과를 잘못 찾을 시, 다른 병원을 찾기까지 시간이 소요됩니다.
 - **따라서 직관적인 UI로 UX를 충족시키고,**
 - **공공데이터포털 데이터를 통해 정확도를 확보하고,**
 - **Kakao 지도를 활용하여 병원의 위치 및 정보를 확인하고,**
