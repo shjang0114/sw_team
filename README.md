@@ -14,6 +14,7 @@
 - 총 5인 <팀원>
 
 **[ 개발 동기 ]**
+
 <img src="https://github.com/user-attachments/assets/aee81e4f-c29c-4459-90d8-1223d079239a"  width="35%" />
 <img src="https://github.com/user-attachments/assets/d06ba4c5-eda5-420d-a9bf-9d93d4bf62df"  width="35%" />
 <img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"  width="20%" />
