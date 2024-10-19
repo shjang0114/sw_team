@@ -8,7 +8,7 @@
 <div class="container">
 
 	<!-- 좌측의 홈페이지 제목, 클릭 시 상단으로 이동-->
-	<a class="navbar-brand" href="#hospital">Hospinet</a>
+	<a class="navbar-brand" href="/cmm/main/mainPage.do">Hospinet</a>
 
 	<!-- 반응형으로 화면의 width 크기가 작아졌을 때 메뉴 버튼이 생기고, 클릭했을 때 하단 하위 메뉴들이 생김-->
 	<button
