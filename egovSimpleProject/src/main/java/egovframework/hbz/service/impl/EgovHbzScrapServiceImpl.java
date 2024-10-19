@@ -135,12 +135,12 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 
 			// Map에 병원 정보 저장
 			Map<String, Object> hospitalInfo = new HashMap<>();
-			hospitalInfo.put("addr", addr);
-			hospitalInfo.put("telno", telno);
-			hospitalInfo.put("yadmNm", yadmNm);
-			hospitalInfo.put("XPos", XPos);
-			hospitalInfo.put("YPos", YPos);
-			hospitalInfo.put("ykiho", ykiho);
+			hospitalInfo.put("addr", addr); // 주소
+			hospitalInfo.put("telno", telno); // 전화 번호
+			hospitalInfo.put("yadmNm", yadmNm); // 병원명
+			hospitalInfo.put("XPos", XPos); // X 좌표
+			hospitalInfo.put("YPos", YPos); // Y 좌표
+			hospitalInfo.put("ykiho", ykiho); // 요양 코드
 
 			// JSON 파싱 후 가져오기
 			Map<String, Object> map2 = HospitalPage(ykiho);
