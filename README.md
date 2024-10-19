@@ -31,7 +31,7 @@
 - 프로젝트 기획, 병원 기본 정보 API, 병원 상세 정보 API, 시간대별 마커 전환
 
 **[ 개발 언어 및 도구 ]**
-- JAVA, JSP, HTML, CSS, JavaScript, Bootstrap, Apache Tomcat, eGovFrame, OpenAI API, Kakao Map, Geolocation, 공공데이터포털
+- JAVA, JSP, HTML, CSS, JavaScript, Bootstrap, Apache Tomcat, eGovFrame, OpenAI API, Kakao Map, Geolocation, DATA.GO.KR
 
 ## 팀프로젝트 상세
 <img src="https://github.com/user-attachments/assets/2e2afd2f-eae1-49d0-98e3-fcb581594bf4"  width="70%" />
