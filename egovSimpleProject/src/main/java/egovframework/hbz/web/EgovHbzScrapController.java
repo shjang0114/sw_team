@@ -31,6 +31,51 @@ public class EgovHbzScrapController {
 	@Autowired
 	EgovHbzScrapServiceImpl egovHbzScrapServiceImpl;
 
+	// 공공데이터포털 - 병원 기본 정보
+	@RequestMapping(value = "/hbz/Hospital.do", method = RequestMethod.GET)
+	public String hostpitalInfo(@RequestParam("address") String address, @RequestParam("code") String code, Model model)
+			throws Exception {
+		List<Map<String, Object>> hospitalList = egovHbzScrapServiceImpl.hospitalInfo(address, code);
+		System.out.println("Received address: " + address);
+		System.out.println("Received code: " + code);
+		model.addAttribute("hospitalList", hospitalList);
+		return "/main/EgovMainView";
+	}
+
+	// 공공데이터포털 - 병원 상세 정보
+	@RequestMapping(value = "/hbz/HospitalInfo.do", method = RequestMethod.GET)
+	public String HospitalPage(@RequestParam("ykiho") String ykiho, Model model) throws Exception {
+		System.out.println("Received ykiho: " + ykiho);
+		Map<String, Object> map = egovHbzScrapServiceImpl.HospitalPage(ykiho);
+
+		model.addAttribute("map", map);
+
+		return "/main/EgovMainView";
+	}
+
+	// AI 챗봇
+	@RequestMapping(value = "/hbz/getGPT3Response.do", method = RequestMethod.GET)
+	@ResponseBody
+	public Map<String, String> getGPT3Response(@RequestParam(value = "question", required = false) String question)
+			throws Exception {
+		logger.info("질문 처리 시작: " + question);
+
+		// ChatGPT API를 호출하여 답변 받기
+		String answer = egovHbzScrapServiceImpl.getResponseFromGPT3(question);
+
+		// 질문 및 답변을 JSON 객체로 반환
+		Map<String, String> response = new HashMap<>();
+		response.put("question", question);
+		response.put("answer", answer);
+		return response;
+	}
+	
+	// 맵 테스트
+	@RequestMapping(value = "/hbz/Map.do", method = RequestMethod.GET)
+	public String MapTest(Model model) throws Exception {
+		return "/main/EgovMainView";
+	}
+	
 	// DB 조회 후 스크래핑 페이지로 전환
 	@RequestMapping(value = "/hbz/scrap.do", method = RequestMethod.GET)
 	public String scrapPage(@RequestParam int pageNo, Model model) throws Exception {
@@ -73,56 +118,5 @@ public class EgovHbzScrapController {
 		model.addAttribute("map", map);
 
 		return "/scrp/getVilageFcst";
-	}
-
-	// 공공데이터포털 - 병원 기본 정보
-	@RequestMapping(value = "/hbz/Hospital.do", method = RequestMethod.GET)
-	public String hostpitalInfo(@RequestParam("address") String address, @RequestParam("code") String code, Model model)
-			throws Exception {
-		List<Map<String, Object>> hospitalList = egovHbzScrapServiceImpl.hospitalInfo(address, code);
-		System.out.println("Received address: " + address);
-		System.out.println("Received code: " + code);
-		model.addAttribute("hospitalList", hospitalList);
-		return "/main/EgovMainView";
-	}
-
-	// 맵 테스트
-	@RequestMapping(value = "/hbz/Map.do", method = RequestMethod.GET)
-	public String MapTest(Model model) throws Exception {
-		return "/main/EgovMainView";
-	}
-
-	// 공공데이터포털 - 병원 상세 정보
-	@RequestMapping(value = "/hbz/HospitalInfo.do", method = RequestMethod.GET)
-	public String HospitalPage(@RequestParam("ykiho") String ykiho, Model model) throws Exception {
-		System.out.println("Received ykiho: " + ykiho);
-		Map<String, Object> map = egovHbzScrapServiceImpl.HospitalPage(ykiho);
-
-		model.addAttribute("map", map);
-
-		return "/main/EgovMainView";
-	}
-
-	@RequestMapping(value = "/hbz/askQuestion.do", method = RequestMethod.GET)
-	public String askQuestion() {
-		// 직접적인 데이터 처리나 로직이 없이, 단순히 페이지를 반환합니다.
-		return "/main/EgovMainView";
-	}
-
-	// AI 챗봇
-	@RequestMapping(value = "/hbz/getGPT3Response.do", method = RequestMethod.GET)
-	@ResponseBody
-	public Map<String, String> getGPT3Response(@RequestParam(value = "question", required = false) String question)
-			throws Exception {
-		logger.info("질문 처리 시작: " + question);
-
-		// ChatGPT API를 호출하여 답변 받기
-		String answer = egovHbzScrapServiceImpl.getResponseFromGPT3(question);
-
-		// 질문 및 답변을 JSON 객체로 반환
-		Map<String, String> response = new HashMap<>();
-		response.put("question", question);
-		response.put("answer", answer);
-		return response;
 	}
 }
