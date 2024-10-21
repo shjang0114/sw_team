@@ -17,7 +17,7 @@
 
 |<img src="https://github.com/user-attachments/assets/aee81e4f-c29c-4459-90d8-1223d079239a"/>|<img src="https://github.com/user-attachments/assets/2822e807-7a79-44c4-bf2a-bf649edb28c7" />|<img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd"/>|
 |:---:|:---:|:---:|
-|고령화 비율|정보화 기기 사용자 비율|고령자 기기 불편도|
+|우리나라 고령화 비율|정보화 기기 사용자 비율|고령자 기기 불편도|
 
 - 우리나라는 OECD 국가들 가운데, 고령화 인구 비율이 급격히 증가하는 추세입니다.
 - 정보화기기 이용자 또한 고령자 비율이 높거나 증가하는 가운데, 기능이 복잡하거나 불편한 UI로 사용에 어려움을 겪고 있습니다.
