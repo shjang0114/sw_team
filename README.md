@@ -34,7 +34,9 @@
 - JAVA, JSP, HTML, CSS, JavaScript, Bootstrap, Apache Tomcat, eGovFrame, OpenAI API, Kakao Map, Geolocation, DATA.GO.KR
 
 ## 팀프로젝트 상세
-<img src="https://github.com/user-attachments/assets/2e2afd2f-eae1-49d0-98e3-fcb581594bf4"  width="70%" />
+|<img src="https://github.com/user-attachments/assets/2e2afd2f-eae1-49d0-98e3-fcb581594bf4"  width="70%" />|
+|:---:|
+|아키텍처 1|
 
 - 사용자는 신체 UI에서 해당하는 부위 및 증상을 선택 시, 진료과가 정해집니다.
 - 진료과와 함께 현재 위치 정보를 받아 파라미터 값으로 하여, 병원 기본 정보 API를 호출합니다.
