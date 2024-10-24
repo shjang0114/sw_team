@@ -56,9 +56,19 @@
 |<img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6" />|<img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64" width="1800" />|<img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c" />|
 |:---:|:---:|:---:|
 |신체 UI|증상 선택 UI|지도 UI|
-<br/>
-<img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed"  width="48%" />
-<img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9"  width="48%" />
+
+<table align="center">
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed" width="320" /></td>
+      <td><img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9" width="320" /></td>
+    </tr>
+    <tr align="center">
+      <td>성별 전환</td>
+      <td>전후면 전환</td>
+    </tr>
+  </tbody>
+</table>
 
 - 실제 사람의 신체를 표현한 UI를 통해 직관성을 강화했습니다.
 - 각 부위를 선택 시, 증상 선택 화면으로 전환됩니다.
