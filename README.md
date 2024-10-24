@@ -60,8 +60,8 @@
 <table align="center">
   <tbody>
     <tr align="center">
-      <td><img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed" width="320" /></td>
-      <td><img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9" width="320" /></td>
+      <td><img src="https://github.com/user-attachments/assets/5f663345-4ef3-4408-b232-a27f7d887eed" width="300" /></td>
+      <td><img src="https://github.com/user-attachments/assets/124fc33a-d2f1-470e-90de-84cf5419a9f9" width="300" /></td>
     </tr>
     <tr align="center">
       <td>성별 전환</td>
