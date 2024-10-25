@@ -506,6 +506,14 @@
 										</div>
 										<div class="divider-custom-line"></div>
 									</div>
+									<div>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											style="margin-right: 20px;"
+											onclick="ModalBtnChangeColor(this, '13')">목이 간지러워요</button>
+										<button class="btn btn-primary col-5 mb-3 modalbtn"
+											onclick="ModalBtnChangeColor(this, '5')">목이 뻐근해요</button>
+									</div>
+									<br>
 									<button class="btn btn-primary"
 										onclick="closeModalAndScrollToSection('hospitalModal2'); getUserLocation();">
 										<i class="fas fa-xmark fa-fw"></i> 완료
