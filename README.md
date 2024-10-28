@@ -54,7 +54,16 @@
 - 사용자는 직관적으로 본인의 현재 위치 주변의 병원들을 마커로 확인할 수 있습니다.
 - 또한 각 병원들의 주요 정보를 열람할 수 있습니다.
 
-<img src="https://github.com/user-attachments/assets/8aee4601-32c7-4598-bc6a-b1722d22ec58"  width="70%" />
+<table>
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/8aee4601-32c7-4598-bc6a-b1722d22ec58" width="500" /></td>
+    </tr>
+    <tr align="center">
+      <td>아키텍처 2</td>
+    </tr>
+  </tbody>
+</table>
 
 - OpenAI API를 활용하여 사용자의 자가 진단을 도와주는 AI 챗봇입니다.
 - 버튼 또는 채팅으로 증상을 작성 시, 해당 정보를 파라미터 값으로 전달하여 OpenAI API를 호출합니다.
