@@ -37,7 +37,7 @@
 <table>
   <tbody>
     <tr align="center">
-      <td><img src="https://github.com/user-attachments/assets/2e2afd2f-eae1-49d0-98e3-fcb581594bf4" width="600" /></td>
+      <td><img src="https://github.com/user-attachments/assets/2e2afd2f-eae1-49d0-98e3-fcb581594bf4" width="500" /></td>
     </tr>
     <tr align="center">
       <td>아키텍처 1</td>
