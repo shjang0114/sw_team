@@ -111,16 +111,34 @@
 - +/- 버튼을 통해 글자 크기를 조절할 수 있습니다.
 
 ### ※ 병원 정보 API
-<img src="https://github.com/user-attachments/assets/70e7c85a-4191-49c3-bf5d-85f3b7d1418d"  width="45%" />
+<table>
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/70e7c85a-4191-49c3-bf5d-85f3b7d1418d" width="500" /></td>
+    </tr>
+    <tr align="center">
+      <td>병원 기본 정보 API</td>
+    </tr>
+  </tbody>
+</table>
 
-- 기본 정보 API를 활용하여 전문 병원의 위치를 보여줍니다.
+- 병원 기본 정보 API를 활용하여 전문 병원의 위치를 보여줍니다.
 - 사용자의 위치 정보와 진료과를 파라미터 값으로 XML 형태의 병원 기본 정보 API를 호출하였습니다.
 - 해당 데이터를 JSOUP 라이브러리로 파싱하여 각 병원의 이름, 주소, 전화번호, 그리고 요양코드를 추출하였습니다.
 - 추출한 정보들은 카카오 지도에서 병원 마커를 클릭하면 확인할 수 있도록 구현하였습니다.
 
-<img src="https://github.com/user-attachments/assets/0b8222c3-e3f7-46a2-8c0e-9ecdbc32ad4c"  width="45%" />
+<table>
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/0b8222c3-e3f7-46a2-8c0e-9ecdbc32ad4c" width="500" /></td>
+    </tr>
+    <tr align="center">
+      <td>병원 상세 정보 API</td>
+    </tr>
+  </tbody>
+</table>
 
-- 상세 정보 API를 활용하여 해당 병원의 상세 정보를 보여줍니다.
+- 병원 상세 정보 API를 활용하여 해당 병원의 상세 정보를 보여줍니다.
 - 이전에 기본 정보 API에서 추출한 요양코드를 파라미터 값으로 하여, JSON 형태의 병원 상세 정보 API를 호출하였습니다.
 - 해당 데이터를 JSOUP 및 JSON-SIMPLE 라이브러리로 파싱하여 각 병원의 주요 정보와 진료 시간을 추출하였습니다.
 - 추출한 진료 시간은 각 병원 마커에 마우스를 올려두면 확인할 수 있도록 구현하였습니다.
