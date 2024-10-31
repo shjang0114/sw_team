@@ -144,8 +144,18 @@
 - 추출한 진료 시간은 각 병원 마커에 마우스를 올려두면 확인할 수 있도록 구현하였습니다.
 
 ### ※ 병원 마커 전환
-<img src="https://github.com/user-attachments/assets/b3bb91d9-bf4b-4f74-b79e-518ab0ba4db6"  width="45%" />
-<img src="https://github.com/user-attachments/assets/4172338a-63a4-45cc-a8c7-0e7ef64b8735"  width="45%" />
+<table>
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/4172338a-63a4-45cc-a8c7-0e7ef64b8735" width="500" /></td>
+      <td><img src="https://github.com/user-attachments/assets/b3bb91d9-bf4b-4f74-b79e-518ab0ba4db6" width="500" /></td>
+    </tr>
+    <tr align="center">
+      <td>병원이 운영 중인 경우</td>
+      <td>병원이 운영을 종료한 경우</td>
+    </tr>
+  </tbody>
+</table>
 
 - 탐색한 시간대별로 해당 시간대에 운영 중인 전문 병원들을 직관적으로 확인할 수 있습니다.
 - 병원 상세 정보 API에서 추출한 진료 시간 데이터를 활용하였습니다.
