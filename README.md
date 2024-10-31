@@ -151,8 +151,8 @@
       <td><img src="https://github.com/user-attachments/assets/b3bb91d9-bf4b-4f74-b79e-518ab0ba4db6" /></td>
     </tr>
     <tr align="center">
-      <td>병원이 운영 중인 경우</td>
-      <td>병원이 운영을 종료한 경우</td>
+      <td>병원이 운영 중인 경우 (초록)</td>
+      <td>병원이 운영을 종료한 경우 (빨강)</td>
     </tr>
   </tbody>
 </table>
