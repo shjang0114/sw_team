@@ -72,9 +72,20 @@
 
 ## 팀프로젝트 결과
 ### ※ 메인 페이지
-|<img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6" />|<img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64" width="1800" />|<img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c" />|
-|:---:|:---:|:---:|
-|신체 UI|증상 선택 UI|지도 UI|
+<table align="center">
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6" /></td>
+      <td><img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64" /></td>
+      <td><img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c" /></td>
+    </tr>
+    <tr align="center">
+      <td>신체 UI</td>
+      <td>증상 선택 UI</td>
+      <td>지도 UI</td>
+    </tr>
+  </tbody>
+</table>
 
 <table align="center">
   <tbody>
