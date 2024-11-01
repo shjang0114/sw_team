@@ -76,7 +76,7 @@
   <tbody>
     <tr align="center">
       <td><img src="https://github.com/user-attachments/assets/a0b6b344-559d-4b72-bf97-42e77e411ab6" /></td>
-      <td><img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64" width="2000" /></td>
+      <td><img src="https://github.com/user-attachments/assets/d8e98f84-65e4-4320-8ecd-86a6deb77a64" width="1800" /></td>
       <td><img src="https://github.com/user-attachments/assets/0154edfd-663c-4068-8b40-93070f29f94c" /></td>
     </tr>
     <tr align="center">
