@@ -120,9 +120,22 @@
 - 성별 및 전후면 전환으로 추가 부위 및 증상을 선택할 수 있습니다. 
 
 ### ※ AI 챗봇
-|<img src="https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468" />|<img src="https://github.com/user-attachments/assets/5b36997e-4380-4ca8-bda0-7124a282d2da" />|<img src="https://github.com/user-attachments/assets/bc9b7be5-8c6c-47f3-9255-4832fd15f56c" />|<img src="https://github.com/user-attachments/assets/63994e4f-cc87-4a26-96ce-bcdb295b70e0" />|
-|:---:|:---:|:---:|:---:|
-|챗봇 UI|증상 채팅|증상 버튼|증상 답변|
+<table align="center">
+  <tbody>
+    <tr align="center">
+      <td><img src="https://github.com/user-attachments/assets/5b1c75da-0033-4c77-9e54-77e42b214468" /></td>
+      <td><img src="https://github.com/user-attachments/assets/5b36997e-4380-4ca8-bda0-7124a282d2da" /></td>
+      <td><img src="https://github.com/user-attachments/assets/bc9b7be5-8c6c-47f3-9255-4832fd15f56c" /></td>
+      <td><img src="https://github.com/user-attachments/assets/63994e4f-cc87-4a26-96ce-bcdb295b70e0" /></td>
+    </tr>
+    <tr align="center">
+      <td>챗봇 UI</td>
+      <td>증상 채팅</td>
+      <td>증상 버튼</td>
+      <td>증상 답변</td>
+    </tr>
+  </tbody>
+</table>
 
 - 우측 상단 챗봇 버튼을 통해 활성화 및 비활성화할 수 있습니다.
 - 정확한 진료과만 선별될 수 있도록 프롬프트를 지정하였습니다.
