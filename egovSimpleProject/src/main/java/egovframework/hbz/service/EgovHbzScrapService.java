@@ -7,12 +7,6 @@ import org.springframework.ui.Model;
 
 public interface EgovHbzScrapService {
 
-	public Map<String, Object> getVilageFcst(String area, String time) throws Exception;
-
-	public void getUltraSrtNcst() throws Exception;
-
-	public List<Map<String, Object>> scrapView(int pageNo, Model model) throws Exception;
-
 	// 병원 기본 정보 호출
 	public List<Map<String, Object>> hospitalInfo(String address, String code) throws Exception;
 	
@@ -21,4 +15,10 @@ public interface EgovHbzScrapService {
 
 	// OpenAI API 호출
 	public String getResponseFromGPT3(String userMessage) throws Exception;
+	
+	public Map<String, Object> getVilageFcst(String area, String time) throws Exception;
+
+	public void getUltraSrtNcst() throws Exception;
+
+	public List<Map<String, Object>> scrapView(int pageNo, Model model) throws Exception;
 }
