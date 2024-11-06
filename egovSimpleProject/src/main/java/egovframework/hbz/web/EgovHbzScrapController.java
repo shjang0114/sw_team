@@ -70,12 +70,6 @@ public class EgovHbzScrapController {
 		return response;
 	}
 	
-	// 맵 테스트
-	@RequestMapping(value = "/hbz/Map.do", method = RequestMethod.GET)
-	public String MapTest(Model model) throws Exception {
-		return "/main/EgovMainView";
-	}
-	
 	// DB 조회 후 스크래핑 페이지로 전환
 	@RequestMapping(value = "/hbz/scrap.do", method = RequestMethod.GET)
 	public String scrapPage(@RequestParam int pageNo, Model model) throws Exception {
