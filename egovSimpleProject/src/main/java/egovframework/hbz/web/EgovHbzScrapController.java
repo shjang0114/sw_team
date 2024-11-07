@@ -69,19 +69,6 @@ public class EgovHbzScrapController {
 		response.put("answer", answer);
 		return response;
 	}
-	
-	// DB 조회 후 스크래핑 페이지로 전환
-	@RequestMapping(value = "/hbz/scrap.do", method = RequestMethod.GET)
-	public String scrapPage(@RequestParam int pageNo, Model model) throws Exception {
-
-		logger.info("### scrapPage Start");
-
-		List<Map<String, Object>> list = egovHbzScrapServiceImpl.scrapView(pageNo, model);
-
-		model.addAttribute("list", list);
-
-		return "/scrp/ScrapPage";
-	}
 
 	// 공공데이터포털 - 기상청 [초단기실황] 데이터 스크래핑
 	@RequestMapping(value = "/hbz/datapotal.do", method = RequestMethod.GET)
