@@ -70,23 +70,6 @@ public class EgovHbzScrapController {
 		return response;
 	}
 
-	// 공공데이터포털 - 기상청 [초단기실황] 데이터 스크래핑
-	@RequestMapping(value = "/hbz/datapotal.do", method = RequestMethod.GET)
-	public String getUltraSrtNcst(Model model) throws Exception {
-
-		logger.info("### dataPotalScrap Start");
-
-		egovHbzScrapServiceImpl.getUltraSrtNcst();
-
-		int pageNo = 1;
-
-		List<Map<String, Object>> list = egovHbzScrapServiceImpl.scrapView(pageNo, model);
-
-		model.addAttribute("list", list);
-
-		return "/scrp/ScrapPage";
-	}
-
 	// 공공데이터포털 - 기상청 [단기예보]
 	@RequestMapping(value = "/hbz/getVilageFcst.do", method = RequestMethod.GET)
 	public String getVilageFcst(@RequestParam String in_area, @RequestParam String in_time, Model model)
