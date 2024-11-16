@@ -23,9 +23,9 @@
       <td><img src="https://github.com/user-attachments/assets/715bfcbb-1393-4150-94f1-cb742c8e25cd" /></td>
     </tr>
     <tr align="center">
-      <td>우리나라 고령화 비율</td>
-      <td>정보화 기기 사용자 비율</td>
-      <td>고령자 기기 불편도</td>
+      <td>고령화 인구 비율</td>
+      <td>정보화기기 사용자 비율</td>
+      <td>고령자 정보화기기 불편도</td>
     </tr>
   </tbody>
 </table>
@@ -57,9 +57,9 @@
 </table>
 
 - 사용자는 신체 UI에서 해당하는 부위 및 증상을 선택 시, 진료과가 정해집니다.
-- 진료과 및 현재 위치 정보를 파라미터 값으로 전달하여, 병원 기본 정보 API를 호출합니다.
+- 진료과 및 현재 위치 정보를 파라미터 값으로 전달하여, 공공데이터포털에서 병원 기본 정보 API를 호출합니다.
 - 병원 기본 정보 API에는 이름, 전화번호, 주소, 요양코드 등의 데이터가 저장되어 있습니다.
-- 호출된 API 데이터 중 요양코드를 파라미터 값으로 전달하여, 병원 상세 정보 API를 추가로 호출합니다.
+- 호출된 병원 기본 정보 API의 데이터 중 요양코드를 파라미터 값으로 전달하여, 병원 상세 정보 API를 추가로 호출합니다.
 - 병원 상세 정보 API에는 시간대별 마커 전환 기능에 필요한 진료 시간 데이터가 저장되어 있습니다.
 - 2개의 API를 알맞는 데이터 형식으로 파싱 및 전송하여 지도에 출력합니다.
 - 사용자는 직관적으로 본인의 현재 위치 주변의 병원들을 마커로 확인할 수 있습니다.
@@ -92,7 +92,7 @@
     </tr>
     <tr align="center">
       <td>신체 UI</td>
-      <td>증상 선택 UI</td>
+      <td>증상 UI</td>
       <td>지도 UI</td>
     </tr>
   </tbody>
@@ -186,8 +186,8 @@
       <td><img src="https://github.com/user-attachments/assets/b3bb91d9-bf4b-4f74-b79e-518ab0ba4db6" /></td>
     </tr>
     <tr align="center">
-      <td>병원이 운영 중인 경우 (초록)</td>
-      <td>병원이 운영을 종료한 경우 (빨강)</td>
+      <td>병원이 진료 중인 경우 [ 초록 ]</td>
+      <td>병원이 진료 종료한 경우 [ 빨강 ]</td>
     </tr>
   </tbody>
 </table>
@@ -205,8 +205,8 @@
       <td><img src="https://github.com/user-attachments/assets/9e015efc-f949-4e73-9bb0-23ed8f21adcb" /></td>
     </tr>
     <tr align="center">
-      <td>건강 퀴즈 (문제)</td>
-      <td>건강 퀴즈 (정답)</td>
+      <td>건강 퀴즈 [ 문제 ]</td>
+      <td>건강 퀴즈 [ 정답 ]</td>
     </tr>
   </tbody>
 </table>
