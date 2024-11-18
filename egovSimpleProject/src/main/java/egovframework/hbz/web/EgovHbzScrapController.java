@@ -69,18 +69,4 @@ public class EgovHbzScrapController {
 		response.put("answer", answer);
 		return response;
 	}
-
-	// 공공데이터포털 - 기상청 [단기예보]
-	@RequestMapping(value = "/hbz/getVilageFcst.do", method = RequestMethod.GET)
-	public String getVilageFcst(@RequestParam String in_area, @RequestParam String in_time, Model model)
-			throws Exception {
-		System.out.println("in_area : " + in_area);
-		System.out.println("in_time : " + in_time);
-
-		Map<String, Object> map = egovHbzScrapServiceImpl.getVilageFcst(in_area, in_time);
-
-		model.addAttribute("map", map);
-
-		return "/scrp/getVilageFcst";
-	}
 }
