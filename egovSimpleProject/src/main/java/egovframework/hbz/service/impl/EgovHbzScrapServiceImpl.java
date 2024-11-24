@@ -661,45 +661,10 @@ public class EgovHbzScrapServiceImpl implements EgovHbzScrapService {
 
 			if (base_date.equals(fcstDate)) {
 				if (fcstTime.equals((String) json_item_get.get("fcstTime"))) {
-					map = putMap(category, fcstValue, map);
+					// map = putMap(category, fcstValue, map);
 				}
 			}
 		}
-
-		return map;
-	}
-
-	// 단기예보 if문
-	public Map<String, Object> putMap(String category, String fcstValue, Map<String, Object> map) {
-
-		if (category.equals("POP"))
-			map.put("POP", fcstValue); // 강수확률 단위:%
-		else if (category.equals("PTY"))
-			map.put("PTY", fcstValue); // 강수형태 단위:코드값
-		else if (category.equals("PCP"))
-			map.put("PCP", fcstValue); // 1시간 강수량 단위:범주 (1mm)
-		else if (category.equals("REH"))
-			map.put("REH", fcstValue); // 습도 단위:%
-		else if (category.equals("SNO"))
-			map.put("SNO", fcstValue); // 1시간 신적설 단위:범주(1cm)
-		else if (category.equals("SKY"))
-			map.put("SKY", fcstValue); // 하늘상태 단위:코드값
-		else if (category.equals("TMP"))
-			map.put("TMP", fcstValue); // 1시간 기온 단위:℃
-		else if (category.equals("TMN"))
-			map.put("TMN", fcstValue); // 일 최저기온 단위:℃
-		else if (category.equals("TMX"))
-			map.put("TMX", fcstValue); // 일 최고기온 단위:℃
-		else if (category.equals("UUU"))
-			map.put("UUU", fcstValue); // 풍속(동서성분) 단위:m/s
-		else if (category.equals("VVV"))
-			map.put("VVV", fcstValue); // 풍속(남북성분) 단위:m/s
-		else if (category.equals("WAV"))
-			map.put("WAV", fcstValue); // 파고 단위:M
-		else if (category.equals("VEC"))
-			map.put("VEC", fcstValue); // 풍향 단위:deg
-		else if (category.equals("WSD"))
-			map.put("WSD", fcstValue); // 풍속 단위:m/s
 
 		return map;
 	}
