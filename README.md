@@ -42,7 +42,7 @@
 - 프로젝트 기획, 병원 기본 정보 API, 병원 상세 정보 API, 시간대별 마커 전환
 
 **[ 개발 언어 및 도구 ]**
-- JAVA, JSP, HTML, CSS, JavaScript, Bootstrap, Apache Tomcat, eGovFrame, OpenAI API, Kakao Map, Geolocation, DATA.GO.KR
+- JAVA, JSP, HTML, CSS, JavaScript, Bootstrap, Apache Tomcat, 전자정부표준프레임워크, 공공데이터포털, OpenAI API, Kakao Map, Geolocation
 
 ## 팀프로젝트 상세
 <table>
